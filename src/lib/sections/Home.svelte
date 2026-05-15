@@ -69,7 +69,7 @@
 			<!-- Subtle availability line -->
 			<div class="avail-line" bind:this={descRef}>
 				<span class="avail-dot"></span>
-				Open to opportunities · Based in Nigeria
+				Open to opportunities · Around the World
 			</div>
 		</div>
 

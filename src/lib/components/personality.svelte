@@ -124,7 +124,7 @@
 			</span>
 
 			<div class="left-name-block">
-				<h2 class="left-name">Chidera<br /><em>Ogbu</em></h2>
+				<h2 class="left-name">Chidera<br /><em>Paul Ogbu</em></h2>
 				<div class="name-rule"></div>
 			</div>
 
@@ -132,22 +132,29 @@
 				<span class="tag">Frontend Engineer</span>
 				<span class="tag-sep">·</span>
 				<span class="tag">Interaction Designer</span>
+				<span class="tag-sep">·</span>
+				<span class="tag">Philosopher</span>
 			</div>
 
 			<p class="left-bio">
-				I sit at the intersection of engineering precision and design sensibility — building systems
-				that respect users' time, attention, and intelligence.
+				We arrive from mystery and leave into it. Between those two unknowns, all we truly possess
+				is this brief span of time. Everything we build will eventually yield to entropy 🌒—wealth,
+				status, even monuments. What endures is not what we own, but who we become. Character forged
+				through suffering, discipline, and resilience is the only lasting achievement. No matter the
+				circumstance, the noblest pursuit is to shape yourself into your highest form. To face pain
+				without surrender. To grow despite chaos. To become, fully and deliberately, the best
+				version of yourself while you still can. --Chidera Paul Ogbu.
 			</p>
 
 			<!-- Stat trio -->
 			<div class="stat-trio">
 				<div class="stat">
-					<span class="stat-val">3+</span>
+					<span class="stat-val">2+</span>
 					<span class="stat-label">Years building</span>
 				</div>
 				<div class="stat-divider"></div>
 				<div class="stat">
-					<span class="stat-val">12+</span>
+					<span class="stat-val">6+</span>
 					<span class="stat-label">Projects shipped</span>
 				</div>
 				<div class="stat-divider"></div>
@@ -195,21 +202,7 @@
 		<div class="photo-frame">
 			<!-- Swap src with your actual photo -->
 			<div class="photo-placeholder">
-				<svg
-					width="52"
-					height="52"
-					viewBox="0 0 52 52"
-					fill="none"
-					xmlns="http://www.w3.org/2000/svg"
-				>
-					<circle cx="26" cy="20" r="10" stroke="#9CC5A1" stroke-width="1.8" />
-					<path
-						d="M6 46c0-11.046 8.954-20 20-20s20 8.954 20 20"
-						stroke="#9CC5A1"
-						stroke-width="1.8"
-						stroke-linecap="round"
-					/>
-				</svg>
+				<img src="/my_image.jpeg" alt="Chidera Paul Ogbu" class="profile-image" />
 				<span>Your Photo</span>
 			</div>
 		</div>

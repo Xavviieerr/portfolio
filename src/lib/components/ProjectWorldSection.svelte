@@ -30,6 +30,7 @@
 		bg: string;
 		accentColor: string;
 		cardBorder: string;
+		imageSrc?: string;
 		artifacts: Artifact[];
 	};
 
@@ -49,11 +50,12 @@
 				{ label: 'Storage Limit', value: '5MB' }
 			],
 			stack: ['JavaScript', 'Chrome Extension API', 'Web Crypto', 'Vercel', 'OpenAI', 'Node.js'],
-			live: '#',
-			github: '#',
+			live: 'https://github.com/Xavviieerr/pageSnack',
+			github: 'https://github.com/Xavviieerr/pageSnack',
 			bg: 'radial-gradient(ellipse at 20% 30%, rgba(73,160,120,0.38) 0%, transparent 55%), radial-gradient(ellipse at 80% 70%, rgba(33,104,105,0.45) 0%, transparent 50%), linear-gradient(145deg, #0d1f18 0%, #0a1a14 50%, #061009 100%)',
 			accentColor: '#49a078',
 			cardBorder: 'rgba(73,160,120,0.25)',
+			imageSrc: '/pagesnack.png',
 			artifacts: [
 				{
 					id: 1,
@@ -125,11 +127,12 @@
 				{ label: 'Server Data', value: '0 Plaintext' }
 			],
 			stack: ['React 19', 'Web Crypto API', 'WebSockets', 'IndexedDB', 'Vite', 'CSS'],
-			live: '#',
-			github: '#',
+			live: 'https://chat-app-frontend-chi-six.vercel.app',
+			github: 'https://github.com/Xavviieerr/chat-app-frontend',
 			bg: 'radial-gradient(ellipse at 75% 20%, rgba(33,104,105,0.4) 0%, transparent 50%), radial-gradient(ellipse at 15% 80%, rgba(31,36,33,0.9) 0%, transparent 60%), linear-gradient(160deg, #081418 0%, #0c1e22 45%, #040c0e 100%)',
 			accentColor: '#216869',
 			cardBorder: 'rgba(33,104,105,0.3)',
+			imageSrc: '/whisperbox.png',
 			artifacts: [
 				{
 					id: 6,
@@ -202,11 +205,12 @@
 				{ label: 'Memory Bound', value: '~2MB' }
 			],
 			stack: ['Vue 3', 'TypeScript', 'Pinia', 'ECharts', 'Zod', 'TailwindCSS'],
-			live: '#',
-			github: '#',
+			live: 'https://blip-green-eight.vercel.app',
+			github: 'https://github.com/Xavviieerr/blip',
 			bg: 'radial-gradient(ellipse at 60% 10%, rgba(156,197,161,0.22) 0%, transparent 45%), radial-gradient(ellipse at 10% 85%, rgba(73,160,120,0.28) 0%, transparent 50%), linear-gradient(135deg, #0f1a10 0%, #131f14 50%, #080e09 100%)',
 			accentColor: '#9cc5a1',
 			cardBorder: 'rgba(156,197,161,0.2)',
+			imageSrc: '/blip.png',
 			artifacts: [
 				{
 					id: 11,
@@ -453,28 +457,34 @@
 
 				<!-- Right: links + image placeholder -->
 				<div class="card-right">
-					<div class="image-placeholder">
-						<svg width="52" height="52" viewBox="0 0 52 52" fill="none">
-							<rect
-								x="4"
-								y="4"
-								width="44"
-								height="44"
-								rx="12"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-dasharray="4 3"
-							/>
-							<circle cx="19" cy="20" r="5" stroke="currentColor" stroke-width="1.5" />
-							<path
-								d="M4 36l13-10 8 7 8-9 15 14"
-								stroke="currentColor"
-								stroke-width="1.5"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-						<span>Project Screenshot</span>
+					<div class="project-media">
+						{#if active.imageSrc}
+							<img src={active.imageSrc} alt="{active.title} Screenshot" class="project-image" />
+						{:else}
+							<div class="image-placeholder">
+								<svg width="52" height="52" viewBox="0 0 52 52" fill="none">
+									<rect
+										x="4"
+										y="4"
+										width="44"
+										height="44"
+										rx="12"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-dasharray="4 3"
+									/>
+									<circle cx="19" cy="20" r="5" stroke="currentColor" stroke-width="1.5" />
+									<path
+										d="M4 36l13-10 8 7 8-9 15 14"
+										stroke="currentColor"
+										stroke-width="1.5"
+										stroke-linecap="round"
+										stroke-linejoin="round"
+									/>
+								</svg>
+								<span>Project Screenshot</span>
+							</div>
+						{/if}
 					</div>
 
 					<div class="link-group">
@@ -848,12 +858,30 @@
 		gap: 1.25rem;
 	}
 
-	.image-placeholder {
+	.project-media {
 		width: 100%;
 		aspect-ratio: 16/10;
 		border-radius: 16px;
+		overflow: hidden;
 		background: rgba(255, 255, 255, 0.04);
-		border: 1px dashed rgba(255, 255, 255, 0.1);
+		border: 1px solid rgba(255, 255, 255, 0.08);
+		position: relative;
+	}
+
+	.project-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+
+	.project-media:hover .project-image {
+		transform: scale(1.05);
+	}
+
+	.image-placeholder {
+		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -948,7 +976,7 @@
 			flex-direction: row;
 			flex-wrap: wrap;
 		}
-		.image-placeholder {
+		.project-media {
 			display: none;
 		}
 		.link-group {
