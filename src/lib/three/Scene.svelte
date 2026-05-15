@@ -16,9 +16,7 @@
 			position z=4.2 with the character at z=0 frames a full-body shot.
 			Looking slightly upward (y=0.8 target) creates a heroic angle.
 		-->
-		<T.PerspectiveCamera makeDefault fov={45} near={0.1} far={100} position={[0, 0.8, 4.2]}>
-			<T.OrthographicCamera />
-		</T.PerspectiveCamera>
+		<T.PerspectiveCamera makeDefault fov={45} near={0.1} far={100} position={[0, 0.8, 4.2]} />
 
 		<!--
 			LIGHTING RIG — dark mystery theme
