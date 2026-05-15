@@ -60,7 +60,7 @@
 
 				<!-- Social pills -->
 				<div class="social-row">
-					<a href="#" target="_blank" class="social-pill">
+					<a href="https://github.com/Xavviieerr" target="_blank" class="social-pill">
 						<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
 							><path
 								d="M7 1C3.686 1 1 3.686 1 7c0 2.656 1.727 4.904 4.124 5.698.3.055.41-.13.41-.29 0-.143-.006-.52-.008-1.022-1.671.363-2.024-.806-2.024-.806-.273-.694-.667-.88-.667-.88-.545-.373.041-.365.041-.365.603.042.92.619.92.619.536.918 1.406.653 1.748.499.054-.388.209-.653.38-.802-1.335-.152-2.738-.668-2.738-2.97 0-.656.234-1.193.619-1.613-.062-.152-.268-.763.058-1.59 0 0 .505-.162 1.655.617A5.98 5.98 0 017 4.98c.527.003 1.073.069 1.553.203 1.149-.779 1.653-.617 1.653-.617.327.827.121 1.438.059 1.59.386.42.619.957.619 1.613 0 2.308-1.405 2.816-2.744 2.965.217.187.409.555.409 1.115 0 .806-.007 1.455-.007 1.652 0 .161.109.349.414.29C11.275 11.902 13 9.655 13 7c0-3.314-2.686-6-6-6z"
@@ -69,7 +69,11 @@
 						>
 						GitHub
 					</a>
-					<a href="#" target="_blank" class="social-pill">
+					<a
+						href="https://www.linkedin.com/in/chidera-paul-ogbu"
+						target="_blank"
+						class="social-pill"
+					>
 						<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
 							><path
 								d="M2 1h10a1 1 0 011 1v10a1 1 0 01-1 1H2a1 1 0 01-1-1V2a1 1 0 011-1zm2.5 3a1 1 0 100 2 1 1 0 000-2zM3 6.5h3V12H3V6.5zm4 0h3v.75c.4-.55 1-.75 1.75-.75C13 6.5 13 8 13 9v3h-3V9.25c0-.45-.2-.75-.65-.75s-.85.3-.85.75V12H7V6.5z"
@@ -78,7 +82,7 @@
 						>
 						LinkedIn
 					</a>
-					<a href="#" target="_blank" class="social-pill">
+					<!-- <a href="#" target="_blank" class="social-pill">
 						<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
 							><path
 								d="M13 2.5s-1 .5-1.5.6A2.5 2.5 0 001.5 5c0 .3 0 .6.1.8C3.1 5.7 4.9 4.8 6 3.5c.2 1 0 2-.8 2.5A2.5 2.5 0 005 8.5c1 0 2-.5 2.5-1.5 0 1-.3 2-1.5 2.5A5 5 0 012 10.5c1.5 1 4 1.5 6-1 1.5-1.8 2-4 1.5-6L13 2.5z"
@@ -86,7 +90,7 @@
 							/></svg
 						>
 						Twitter
-					</a>
+					</a> -->
 				</div>
 			</div>
 
@@ -183,7 +187,12 @@
 			<p class="copyright">© {new Date().getFullYear()} Chidera Ogbu. Built with SvelteKit.</p>
 
 			<div class="bottom-right">
-				<a href="#" class="cv-btn">
+				<a
+					href="https://docs.google.com/document/d/18g25AVkfWyVb2TprTx7lHAgWntw5F5jSGDIA8VTLXtU/export?format=pdf"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="cv-btn"
+				>
 					<svg width="14" height="14" viewBox="0 0 14 14" fill="none"
 						><path
 							d="M7 1v8M7 9L4.5 6.5M7 9l2.5-2.5M2 12h10"

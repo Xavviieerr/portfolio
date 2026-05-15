@@ -108,39 +108,42 @@
 	const education = [
 		{
 			title: 'BSc Computer Science',
-			school: 'University Name',
-			year: '2022 — 2026',
-			description: 'Focused on frontend engineering, software systems, and interaction design.',
+			school: ' Air Force Institute of Technology, Kaduna',
+			year: '2021 — 2024',
+			description:
+				'Focused on algorithms, software development principles, and computer science fundamentals.',
 			index: '01'
 		},
 		{
-			title: 'Frontend Engineering',
-			school: 'Self Directed Learning',
-			year: '2023 — Present',
-			description: 'Studying immersive interfaces, animation systems, and modern UI architecture.',
+			title: 'Software engineer intern',
+			school: 'IHIFIX technologies, Kaduna - Nigeria',
+			year: '2024',
+			description:
+				'Contributed to the development and optimization of full-stack applications within an agile team. Developed backend functionality and designed internal APIs to support seamless data flow. Enhanced technical and soft skills by translating business requirements into functional software solutions.',
 			index: '02'
 		},
 		{
-			title: 'Backend Foundations',
-			school: 'Independent Study',
-			year: '2023',
+			title: 'Software Engineering Bootcamp',
+			school: 'ALX Africa',
+			year: '2023 - 2025',
 			description:
-				'Worked with APIs, databases, authentication systems, and application structure.',
+				'Intensive program covering low-level programming in C and Python, system design, and full-stack engineering.',
 			index: '03'
 		},
 		{
-			title: 'Creative Development',
-			school: 'Interactive Web Exploration',
-			year: '2024',
-			description: 'Exploring cinematic interfaces, motion systems, and interactive storytelling.',
+			title: 'Frontend Engineer Bootcamp',
+			school: 'HNG Tech',
+			year: 'April - june, 2026',
+			description:
+				'Worked on immersive interfaces, animation systems, and modern UI architecture. Enginnered production ready data  optimized frontend applications with a focus on performance and user experience.',
 			index: '04'
 		},
 		{
-			title: 'AI + Product Thinking',
-			school: 'Personal Research',
+			title: 'Full Stack Engineer',
+			school: 'Personal Builds & Projects',
 			year: '2025',
 			description:
-				'Researching intelligent systems, user experience, and product-driven engineering.',
+				'Improving proficiency in intelligent systems, user experience, and product-driven engineering.',
 			index: '05'
 		}
 	];
@@ -153,8 +156,8 @@
 	<div class="grain"></div>
 
 	<div class="header-wrap" bind:this={headerRef}>
-		<span class="eyebrow">Selected Background</span>
-		<h2 class="section-title">Education</h2>
+		<span class="eyebrow">My Background</span>
+		<h2 class="section-title">Education & Experience</h2>
 		<div class="title-rule"></div>
 	</div>
 
@@ -200,6 +203,8 @@
 		background: var(--c-bg);
 		padding: 7rem 1.5rem 8rem;
 		font-family: 'DM Sans', 'Outfit', system-ui, sans-serif;
+		flex: content;
+		align-items: center;
 	}
 
 	.blob {
@@ -264,7 +269,7 @@
 	}
 	.section-title {
 		display: block;
-		font-size: clamp(2.6rem, 5vw, 4rem);
+		font-size: clamp(2.2rem, 4vw, 3rem);
 		font-weight: 800;
 		letter-spacing: -0.04em;
 		color: var(--c-dark);
@@ -273,7 +278,7 @@
 	}
 	.title-rule {
 		width: 38px;
-		height: 3px;
+		height: 2px;
 		background: linear-gradient(90deg, var(--c-green), var(--c-sage));
 		border-radius: 2px;
 		margin: 0 auto;
@@ -282,19 +287,22 @@
 	.card-grid {
 		position: relative;
 		z-index: 2;
-		display: grid;
-		grid-template-columns: 1fr;
-		gap: 1.25rem;
-		max-width: 1280px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 1.5rem;
+		max-width: 1200px;
 		margin: 0 auto;
 	}
+
+	.card-col {
+		width: 100%;
+		max-width: 320px;
+	}
+
 	@media (min-width: 768px) {
-		.card-grid {
-			grid-template-columns: repeat(5, 1fr);
-			gap: 1rem;
-		}
 		.card-col.offset {
-			margin-top: 5rem;
+			margin-top: 4rem;
 		}
 	}
 

@@ -64,24 +64,8 @@
 			<!-- ── IMAGE CARD ── -->
 			<div class="glass-card image-card" bind:this={imageCard}>
 				<div class="image-frame">
-					<!-- Replace with your <img> -->
-					<div class="image-placeholder">
-						<svg
-							width="48"
-							height="48"
-							viewBox="0 0 48 48"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
-						>
-							<circle cx="24" cy="18" r="9" stroke="#9CC5A1" stroke-width="2" />
-							<path
-								d="M6 42c0-9.941 8.059-18 18-18s18 8.059 18 18"
-								stroke="#9CC5A1"
-								stroke-width="2"
-								stroke-linecap="round"
-							/>
-						</svg>
-						<span>Your Photo Here</span>
+					<div class="image-container">
+						<img src="/my_image.jpeg" alt="Chidera Paul Ogbu" class="profile-image" />
 					</div>
 				</div>
 
@@ -91,7 +75,7 @@
 					Available for work
 				</div>
 				<div class="stat-chip chip-bottom">
-					<span class="chip-num">3+</span>
+					<span class="chip-num">2+</span>
 					<span class="chip-label">Years building</span>
 				</div>
 			</div>
@@ -104,7 +88,7 @@
 				</div>
 
 				<!-- Name -->
-				<h2 class="name-heading">Your<br /><em>Name</em></h2>
+				<h2 class="name-heading">Chidera<br /><em>Paul Ogbu</em></h2>
 
 				<!-- Role tags -->
 				<div class="role-tags">
@@ -118,32 +102,24 @@
 
 				<!-- Bio -->
 				<p class="bio-text">
-					I build immersive digital experiences that combine performance, motion, and intentional
-					interaction design — creating interfaces that feel genuinely alive.
+					I am a frontend engineer and i build immersive digital experiences that combine
+					performance, motion, and intentional interaction design — creating interfaces that feel
+					genuinely alive.
 				</p>
 
 				<!-- CTA row -->
 				<div class="cta-row">
 					<button class="btn-primary">
-						<svg
-							width="16"
-							height="16"
-							viewBox="0 0 16 16"
-							fill="none"
-							xmlns="http://www.w3.org/2000/svg"
+						<a
+							href="https://docs.google.com/document/d/18g25AVkfWyVb2TprTx7lHAgWntw5F5jSGDIA8VTLXtU/export?format=pdf"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
-							<path
-								d="M8 1v9m0 0L5 7m3 3l3-3M2 13h12"
-								stroke="currentColor"
-								stroke-width="1.6"
-								stroke-linecap="round"
-								stroke-linejoin="round"
-							/>
-						</svg>
-						Download CV
+							Download CV
+						</a>
 					</button>
 
-					<a href="#" class="link-pill">
+					<a href="https://github.com/Xavviieerr" class="link-pill">
 						<svg
 							width="15"
 							height="15"
@@ -159,7 +135,7 @@
 						GitHub
 					</a>
 
-					<a href="#" class="link-pill">
+					<a href="https://www.linkedin.com/in/chidera-paul-ogbu" class="link-pill">
 						<svg
 							width="15"
 							height="15"
@@ -313,19 +289,18 @@
 		background: linear-gradient(145deg, var(--c-mist) 0%, rgba(156, 197, 161, 0.35) 100%);
 	}
 
-	.image-placeholder {
+	.image-container {
 		width: 100%;
 		height: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 0.75rem;
-		color: var(--c-teal);
-		font-size: 0.78rem;
-		font-weight: 500;
-		letter-spacing: 0.08em;
-		opacity: 0.7;
+		position: relative;
+	}
+
+	.profile-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+		display: block;
 	}
 
 	/* Floating chips */
